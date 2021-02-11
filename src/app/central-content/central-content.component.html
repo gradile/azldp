@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <app-divorce-card  (workCardEvent)="openDialog($event)"></app-divorce-card>
+      </div>
+      <div class="col-md-3">
+        <app-bankruptcy-card (workCardEvent)="openDialog($event)"></app-bankruptcy-card>
+      </div> 
+      <div class="col-md-3">
+        <app-child-support-card (workCardEvent)="openDialog($event)"></app-child-support-card>
+      </div>
+      <div class="col-md-3">
+        <app-grand-parents-card (workCardEvent)="openDialog($event)"></app-grand-parents-card>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-md-3">
+        <app-guardianship-card (workCardEvent)="openDialog($event)"></app-guardianship-card>
+      </div>
+      <div class="col-md-3">
+        <app-real-estate-card (workCardEvent)="openDialog($event)"></app-real-estate-card>
+      </div>
+      <div class="col-md-3">
+        <app-wills-card (workCardEvent)="openDialog($event)"></app-wills-card>
+      </div>
+    </div>
+</div>

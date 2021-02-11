@@ -1,0 +1,31 @@
+// Cards styles
+.services-card {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2),
+    0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 2px 3px 2px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  padding-top: 30px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+button {
+  color: #fb6c6c;
+  border: none;
+  background: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:active {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  color: #e32b2b;
+}

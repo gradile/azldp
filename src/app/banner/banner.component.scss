@@ -1,0 +1,32 @@
+.banner {
+  // background-image: url("../../assets/back-red.jpg");
+  /*	  padding-bottom: 150px;*/
+  text-align: center;
+  margin-top: 100px;
+
+  background-repeat: no-repeat;
+}
+
+.banner h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 35px;
+  color: #eee;
+  text-transform: capitalize;
+}
+.banner h3 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ddd;
+  text-transform: uppercase;
+  letter-spacing: 0.055em;
+}
+
+.banner .btn {
+  padding: 7px 25px;
+  font-size: 14px;
+  border-radius: 30px;
+}
