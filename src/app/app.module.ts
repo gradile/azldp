@@ -28,6 +28,7 @@ import { GuardianshipDialogComponent } from './dialogs/guardianship-dialog/guard
 import { RealEstateDialogComponent } from './dialogs/real-estate-dialog/real-estate-dialog.component';
 import { WillsDialogComponent } from './dialogs/wills-dialog/wills-dialog.component';
 import { CommonModule } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { CommonModule } from '@angular/common';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

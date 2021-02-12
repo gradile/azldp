@@ -18,6 +18,7 @@ body {
   text-align: center;
   padding-top: 30px;
   margin-top: 20px;
+  border-radius: 0.5em;
 }
 
 h1 {
@@ -62,4 +63,9 @@ button:hover {
 
 mat-dialog-container {
   max-width: 600px;
+}
+
+.close {
+  color: #c11d23;
+  opacity: 100%;
 }
