@@ -1,5 +1,5 @@
 footer {
-  padding: 50px 0;
+  padding: 10px 0;
   background: #e32b2b;
   text-align: center;
 }
@@ -19,11 +19,13 @@ footer p a {
 footer p a:hover {
   color: #fb6c6c;
 }
+
 footer img {
   max-width: 150px !important;
   margin: 15px auto;
   background: #f8f8f8;
   border-radius: 4px;
+  padding: 20px;
 }
 
 footer .social a {

@@ -1,10 +1,16 @@
+@font-face {
+  font-family: AssassinNinja-7BYyR;
+  src: url("./../../assets/fonts/AssassinNinja-7BYyR.ttf");
+}
+
 .banner {
-  // background-image: url("../../assets/back-red.jpg");
-  /*	  padding-bottom: 150px;*/
   text-align: center;
   margin-top: 100px;
-
+  height: 80px;
   background-repeat: no-repeat;
+  background-color: #c21d23;
+  border-top: 15px black solid;
+  border-bottom: 15px black solid;
 }
 
 .banner h2 {
@@ -29,4 +35,12 @@
   padding: 7px 25px;
   font-size: 14px;
   border-radius: 30px;
+}
+
+.banner p {
+  color: #fff;
+  font-family: AssassinNinja-7BYyR;
+  font-size: xx-large;
+  line-height: 1.65em;
+  margin-bottom: 5px;
 }

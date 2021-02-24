@@ -12,6 +12,9 @@ export class MailServiceService {
   private API_SERVER = 'http://azdocumentninja.com/mailerApi/api/smtpEmail.php';
 
   sendEmail(mailFields: MailFields): Observable<MailFields> {
-    return this.httpClient.post<MailFields>(`${this.API_SERVER}`, mailFields);
+    return this.httpClient.post<MailFields>(
+      `${this.API_SERVER}`,
+      JSON.stringify(mailFields)
+    );
   }
 }
