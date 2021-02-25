@@ -1,7 +1,7 @@
 header .navbar {
   margin: 0;
   border-radius: 0;
-  border-bottom: 1px solid #fb6c6c;
+  border-bottom: 1px solid #c21d23;
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
 }
 header .navbar-nav > li > a {
@@ -10,20 +10,23 @@ header .navbar-nav > li > a {
   padding-bottom: 6px;
   border: 1px solid transparent;
   border-radius: 3px;
+  color: #0a0a0a;
+  font-size: large;
 }
 
-header .navbar-default .navbar-nav > li > a:hover,
+header .navbar-nav > li > a:hover,
 header .navbar-default .navbar-nav > li > a:focus,
 header .navbar-default .navbar-nav > li.open > a:hover,
 header .navbar-default .navbar-nav > li.open > a:focus {
   background: #fff;
-  border: 1px solid #fb6c6c;
+  border: 1px solid #c21d23;
+  color: #c21d23;
 }
 
 header .navbar-nav .dropdown-menu {
   top: 57px;
   border-radius: 3px;
-  border-color: #fb6c6c;
+  border-color: #c21d23;
 }
 header .navbar-nav .dropdown-menu:after,
 header .navbar-nav .dropdown-menu:before {
@@ -45,7 +48,7 @@ header .navbar-nav .dropdown-menu:after {
 
 header .navbar-nav .dropdown-menu:before {
   border-color: rgba(194, 225, 245, 0);
-  border-bottom-color: #fb6c6c;
+  border-bottom-color: #c21d23;
   border-width: 8px;
   margin-right: -1px;
 }

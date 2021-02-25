@@ -68,6 +68,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   padding: 15px 0px 0px 0px;
+  font-size: 10vw;
 }
 
 mat-dialog-container {
@@ -77,4 +78,22 @@ mat-dialog-container {
 .close {
   color: #c11d23;
   opacity: 100%;
+  float: right;
+  font-size: x-large;
+}
+
+.mat-h1 {
+  text-align: center;
+}
+
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  }
+}
+
+@media screen and (min-width: 75em) {
+  html {
+    font-size: 1.5em;
+  }
 }
