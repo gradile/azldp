@@ -2,34 +2,34 @@
     <div class="container">
         <div class="submit-form" *ngIf="!isSubmitted">
             <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
-                <!-- <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" formControlName="subject">
-                </div>  -->
-
-                <mat-form-field appearance="outline">
-                    <mat-label>Subject</mat-label>
-                    <input matInput placeholder="Subject" type="text" formControlName="subject">
-                    
-                    <mat-hint>The subject of your question</mat-hint>
-                </mat-form-field>
-
-               <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" formControlName="contact_name">
-                    <div *ngIf="isSubmitted && contactForm.controls.contact_name.errors" [ngClass]="{ 'alert-danger': isSubmitted && contactForm.controls.contact_name.errors }">Email is required</div>
-                </div> 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" formControlName="contact_email">
-                    <div *ngIf="isSubmitted && contactForm.controls.contact_email.errors" [ngClass]="{ 'alert-danger': isSubmitted && contactForm.controls.contact_email.errors }">Email is required</div>
+                <div>
+                    <mat-form-field appearance="outline"  [floatLabel]="floatLabelControl.value">
+                        <mat-label>Subject</mat-label>
+                        <input matInput placeholder="Subject" type="text" formControlName="subject">
+                    </mat-form-field>
                 </div>
-                <div class="form-group">
-                    <label for="query">Message</label>
-                    <input type="text" formControlName="contact_question" >
+                <div >
+                    <mat-form-field appearance="outline"  [floatLabel]="floatLabelControl.value">
+                        <mat-label>Name</mat-label>
+                        <input  matInput  type="text" formControlName="contact_name">
+                    </mat-form-field>
+                    <mat-error *ngIf="contactForm.controls.contact_name.touched && contactForm.controls.contact_name.errors">Name is required</mat-error>
+                </div> 
+                <div >
+                    <mat-form-field appearance="outline" [floatLabel]="floatLabelControl.value">
+                        <mat-label>Email</mat-label>
+                    <input  matInput  type="text" formControlName="contact_email">
+                    </mat-form-field>
+                    <mat-error *ngIf="contactForm.controls.contact_email.touched && contactForm.controls.contact_email.errors">Email is required</mat-error>
+                </div>
+                <div >
+                    <mat-form-field appearance="outline" [floatLabel]="floatLabelControl.value">
+                    <mat-label for="query">Message</mat-label>
+                    <input matInput type="text" formControlName="contact_question" >
+                    </mat-form-field>
                     <div *ngIf="isSubmitted && contactForm.controls.contact_question.errors" [ngClass]="{ 'alert-danger': isSubmitted && contactForm.controls.contact_question.errors }">Message is required</div>
                 </div>
-                <div class="row">
+                <div >
                     <div class="col-md-4">
                         <input class="btn btn-primary" [disabled]="contactForm.invalid" type="submit" 
                             value="Send Message">
@@ -48,30 +48,5 @@
             <!-- <button class="btn btn-success" (click)="newMatter()">New...</button> -->
         </div>
     </div>
-    <!-- <div class="container">
-        <!-- default heading -->
-        <!-- <div class="default-heading"> -->
-            <!-- heading -->
-            <!-- <h2>Contact Us</h2> -->
-            <!-- paragraph -->
-        <!-- </div> -->
-            <!-- <div class="col-md-3 col-sm-6">
-                <!-- heading -->
-                <!-- <h3>Address</h3> -->
-                <!-- paragraph -->
-                <!-- <p class="address">Address</p> -->
-                    <br>
-                <!-- heading -->
-                <!-- <h3>Phone</h3> -->
-                <!-- paragraph -->
-                <!-- <p class="address"></p> -->
-                    <br>
-                <!-- heading -->
-                <!-- <h3>Email</h3> -->
-                <!-- paragraph -->
-                <!-- <p class="address"><a href="#">info@azdocsninja.com</a></p> -->
-            <!-- </div> --> -->
-                <!-- <div class="col-md-4">
-                    <img class="img-responsive map" src="../../assets/map.jpg" alt="map" />
-                </div> -->
-        <!-- </div> --> 
+   
+            

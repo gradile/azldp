@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators
+} from '@angular/forms';
 import { MailServiceService } from '../service/mail-service.service';
 
 @Component({
@@ -12,10 +17,17 @@ export class ContactComponent implements OnInit {
     private mailService: MailServiceService,
 
     private fb: FormBuilder
-  ) {}
+  ) {
+    this.contactForm = fb.group({
+      hideRequired: this.hideRequiredControl,
+      floatLabel: this.floatLabelControl
+    });
+  }
 
   isSubmitted = false;
   contactForm: FormGroup;
+  hideRequiredControl = new FormControl(false);
+  floatLabelControl = new FormControl('auto');
 
   ngOnInit(): void {
     this.contactForm = this.fb.group({
@@ -26,17 +38,16 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  sendEmail(): void {
+  sendEmail() {
     const data = this.contactForm.getRawValue();
-
     this.mailService.sendEmail(data).subscribe(
       response => {
         console.log(response);
-        this.isSubmitted = true;
       },
       error => {
         console.log(error);
       }
     );
+    this.isSubmitted = true;
   }
 }
